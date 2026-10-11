@@ -26,4 +26,4 @@ dependencies = [
 
 [project.urls]
 "Homepage" = "https://atomixdigital.com"
-"Bug Tracker" = "https://github.com/anbu-max/atomix-agent/issues"
+"Bug Tracker" = "https://github.com/anbu-max/atomix-digital/issues"
