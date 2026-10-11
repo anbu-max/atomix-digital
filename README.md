@@ -53,7 +53,7 @@ Maintained with ❤️ by the engineering team at [Atomix Digital](https://atomi
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/anbu-max/atomix-agent-core.git
+git clone https://github.com/anbu-max/atomix-agent.git
 cd atomix-agent-core
 pip install -e .
 ```
