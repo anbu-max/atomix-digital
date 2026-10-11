@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atomix-agent-core"
+version = "0.1.0"
+authors = [
+  { name="Atomix Digital Engineering", email="admin@atomixdigital.com" },
+]
+description = "Lightweight multi-agent orchestration framework powered by Claude 3.5 Sonnet"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "anthropic>=0.39.0",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.1",
+    "rich>=13.7.1",
+]
+
+[project.urls]
+"Homepage" = "https://atomixdigital.com"
+"Bug Tracker" = "https://github.com/anbu-max/atomix-agent-core/issues"
