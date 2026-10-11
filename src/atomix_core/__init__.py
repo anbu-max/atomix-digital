@@ -1,4 +1,4 @@
-"""Atomix Agent Core - Multi-agent orchestration powered by Claude 3.5 Sonnet."""
+"""Atomix Digital - Open-source AI agent workflow platform powered by Claude 3.5 Sonnet."""
 
 from .types import AgentConfig, AgentResponse, MessageRole
 from .client import AtomixAgent

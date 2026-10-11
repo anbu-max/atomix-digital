@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "atomix-agent-core"
+name = "atomix-digital"
 version = "0.1.0"
 authors = [
   { name="Atomix Digital Engineering", email="admin@atomixdigital.com" },
 ]
-description = "Lightweight multi-agent orchestration framework powered by Claude 3.5 Sonnet"
+description = "Open-source AI agent workflow platform powered by Claude 3.5 Sonnet for autonomous business automation"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }

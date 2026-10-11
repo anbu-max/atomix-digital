@@ -1,13 +1,13 @@
-# Atomix Agent Core ⚡
+# Atomix Digital ⚡
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Powered by](https://img.shields.io/badge/Anthropic%20Claude-3.5%20Sonnet-FF6B35.svg)](https://anthropic.com)
 [![Maintained by](https://img.shields.io/badge/Maintained%20by-Atomix%20Digital-black.svg)](https://atomixdigital.com)
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://python.org)
 
-**Atomix Agent Core** is an enterprise-grade multi-agent execution and workflow orchestration framework powered by Anthropic's **Claude 3.5 Sonnet** and **Claude 3.5 Haiku**. 
+**Atomix Digital** is an open-source AI agent workflow platform and multi-agent orchestration framework powered by Anthropic's **Claude 3.5 Sonnet** and **Claude 3.5 Haiku**.
 
-Engineered for autonomous task routing, high-accuracy structured JSON extraction, and scalable business process automation.
+Built for autonomous task routing, intelligent workflow automation, high-accuracy structured JSON extraction, and scalable business process orchestration using large language models.
 
 Maintained with ❤️ by the engineering team at [Atomix Digital](https://atomixdigital.com).
 
@@ -15,10 +15,10 @@ Maintained with ❤️ by the engineering team at [Atomix Digital](https://atomi
 
 ## 🚀 Key Highlights
 
-- **Claude 3.5 Native Integration**: First-class support for prompt caching, tool use (function calling), and structured outputs.
-- **Dynamic Multi-Agent Routing**: Coordinate specialized worker agents (e.g., Code Reviewer, Data Extractor, Workflow Planner) using a centralized router.
+- **Claude 3.5 Native Integration**: First-class support for prompt caching, tool use (function calling), and structured outputs via the Anthropic API.
+- **AI Agent Workflow Engine**: Orchestrate specialized worker agents (e.g., Code Reviewer, Data Extractor, Workflow Planner) through a centralized intelligent router.
 - **Type-Safe Validation**: Native Pydantic V2 schema enforcement to guarantee zero-hallucination structured responses.
-- **Production Resilience**: Built-in exponential backoff, rate-limit adapters, and fallback strategies.
+- **Production Resilience**: Built-in exponential backoff, rate-limit adapters, and fallback strategies for enterprise deployment.
 
 ---
 
@@ -29,7 +29,7 @@ Maintained with ❤️ by the engineering team at [Atomix Digital](https://atomi
                             │
                             ▼
                ┌────────────────────────┐
-               │   Atomix Agent Router  │
+               │  Atomix Digital Router │
                └───────────┬────────────┘
                            │
        ┌───────────────────┼───────────────────┐
@@ -54,7 +54,7 @@ Maintained with ❤️ by the engineering team at [Atomix Digital](https://atomi
 
 ```bash
 git clone https://github.com/anbu-max/atomix-digital.git
-cd atomix-agent-core
+cd atomix-digital
 pip install -e .
 ```
 
@@ -78,13 +78,13 @@ ATOMIX_LOG_LEVEL=INFO
 
 ## 💡 Quickstart Example
 
-Run a structured agent in under 10 lines of code:
+Run a structured AI agent workflow in under 10 lines of code:
 
 ```python
 import os
 from atomix_core import AtomixAgent, AgentConfig
 
-# Initialize agent powered by Claude 3.5 Sonnet
+# Initialize an Atomix Digital agent powered by Claude 3.5 Sonnet
 agent = AtomixAgent(
     config=AgentConfig(
         model="claude-3-5-sonnet-20241022",
@@ -101,12 +101,12 @@ print(response.content)
 ## 📂 Project Structure
 
 ```
-atomix-agent-core/
+atomix-digital/
 ├── src/
 │   └── atomix_core/
 │       ├── __init__.py      # Package entrypoint
 │       ├── client.py        # Anthropic Claude API wrapper
-│       ├── router.py        # Multi-agent dispatch & coordination
+│       ├── router.py        # AI agent workflow dispatch & coordination
 │       └── types.py         # Pydantic schemas & state models
 ├── examples/
 │   └── quickstart.py        # Complete runnable demo
